@@ -1,0 +1,73 @@
+@import "bootstrap.css";
+@import "variable.css";
+#map { height: 180px; }
+a{
+    color: inherit !important;
+    text-decoration: none !important;
+}
+
+input[type = "checkbox"]:not(.filter-toggle ,.btn-check) {
+    position: relative;
+    margin: 0 20px;
+}
+input[type = "checkbox"]:not(.filter-toggle ,.btn-check):before{
+    position: absolute;
+    content: '';
+    width: 300%;
+    height: 140%;
+    z-index: 1;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    background: #4d4d4d;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    transition: 0.3s;
+}
+input[type = "checkbox"]:not(.filter-toggle ,.btn-check):checked:before{
+    background: #076f3e;
+}
+
+input[type = "checkbox"]:not(.filter-toggle ,.btn-check):after{
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+    box-shadow: 0 0 5px 1px grey;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    z-index: 2;
+    background: #ffffff;
+    top: 50%;
+    left: -30%;
+    transform: translate(-50% , -50%);
+    transition: 0.3s;
+}
+
+input[type = "checkbox"]:checked:after{
+    left: 130%;
+}
+
+
+.map-container {
+    height: 400px;
+}
+
+.sidebar {
+    background-color: rgba(35, 55, 75, 0.9);
+    color: #fff;
+    padding: 6px 12px;
+    font-family: monospace;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 12px;
+    border-radius: 4px;
+}
+
+.MuiStack-root.css-1xhypcz-MuiStack-root{
+    padding: 0 !important;
+}

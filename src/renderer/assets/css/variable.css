@@ -1,0 +1,18 @@
+:root{
+    --header-background : #F8F9FA ;
+    --header-color: rgba(0, 0, 0, 0.55);
+}
+
+.bg-header{
+    background: var(--header-background) !important;
+}
+.text-header{
+    color: var(--header-color) !important;
+    transition: 0.4s;
+}
+.text-header:hover{
+    color: black !important;
+}
+.cursor-pointer{
+    cursor:pointer;
+}
